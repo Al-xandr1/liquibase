@@ -5,7 +5,7 @@
 
     <groupId>org.liquibase</groupId>
     <artifactId>liquibase</artifactId>
-    <version>0-SNAPSHOT</version>
+    <version>4.17.0.ignite.0</version>
     <packaging>pom</packaging>
 
     <url>http://www.liquibase.org</url>
@@ -26,6 +26,15 @@
             </roles>
             <timezone>-6</timezone>
         </developer>
+        <developer>
+            <id>al-xandr1</id>
+            <name>Tsarev Aleksandr</name>
+            <email>al-xandr1@yandex.ru</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>+4</timezone>
+        </developer>
     </developers>
 
     <licenses>
@@ -45,9 +54,9 @@
 
 
     <scm>
-        <connection>scm:git:git@github.com:liquibase/liquibase.git</connection>
-        <url>scm:git:git@github.com:liquibase/liquibase.git</url>
-        <developerConnection>scm:git:git@github.com:liquibase/liquibase.git</developerConnection>
+        <connection>scm:git:git@github.com:Al-xandr1/liquibase.git</connection>
+        <url>scm:git:git@github.com:Al-xandr1/liquibase.git</url>
+        <developerConnection>scm:git:git@github.com:Al-xandr1/liquibase.git</developerConnection>
     </scm>
 
     <properties>
@@ -79,8 +88,8 @@
         <module>liquibase-maven-plugin</module>
         <module>liquibase-cdi</module>
         <module>liquibase-integration-tests</module>
-        <module>liquibase-dist</module>
-        <module>liquibase-extension-examples</module>
+        <!--        <module>liquibase-dist</module>-->
+        <!--        <module>liquibase-extension-examples</module>-->
         <module>liquibase-extension-testing</module>
         <module>liquibase-snowflake</module>
     </modules>
@@ -427,6 +436,11 @@
             <!--            </configuration>-->
             <!--        </plugin>-->
 
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.13.0</version>
+            </plugin>
         </plugins>
         <!--        <pluginManagement>-->
         <!--            <plugins>-->
